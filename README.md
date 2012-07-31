@@ -62,6 +62,9 @@ Tests are run using the py.test library. You will find examples here for running
 
 WebDriver does not need a Selenium Server or Grid to run so these examples bypass this step and just use the --driver command.
 
+--baseurl=https://marketplace-dev.allizom.org/
+git submodule init
+git submodule update
 An example of running all tests without a Selenium Server:
 
 	py.test --driver=firefox --credentials=/credentials.yaml --destructive .
